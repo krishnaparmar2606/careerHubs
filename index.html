@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Success Hub - 50+ Professional Tips</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-rocket"></i>
+                <span>Career Success Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#categories">Categories</a></li>
+               
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master Your Career Journey</h1>
+            <p>50+ Expert Tips for Students & Professionals</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Career Tips</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                
+            </div>
+            <a href="#tips" class="cta-button">Explore Tips</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search tips, skills, or topics...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Tips</button>
+                <button class="filter-btn" data-category="career">Career Path</button>
+                <button class="filter-btn" data-category="skills">Skills</button>
+                <button class="filter-btn" data-category="resume">Resume</button>
+                <button class="filter-btn" data-category="linkedin">LinkedIn</button>
+                <button class="filter-btn" data-category="sidehustle">Side Hustle</button>
+                <button class="filter-btn" data-category="remote">Remote Jobs</button>
+                <button class="filter-btn" data-category="interview">Interview</button>
+                <button class="filter-btn" data-category="freelancing">Freelancing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <h2>Professional Development Tips</h2>
+            <div class="tips-grid" id="tipsGrid">
+                <!-- Tips will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Overview -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2>Explore by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-compass"></i>
+                    <h3>Career Path</h3>
+                    <p>Choose the right direction after 12th/graduation</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Essential Skills</h3>
+                    <p>Top 10 skills needed in 2025 with free resources</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Resume Building</h3>
+                    <p>Create impressive resumes that get noticed</p>
+                </div>
+                <div class="category-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn Optimization</h3>
+                    <p>Step-by-step profile optimization guide</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Side Hustles</h3>
+                    <p>Extra income ideas for students & professionals</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Remote Jobs</h3>
+                    <p>Find and secure remote work opportunities</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Interview Prep</h3>
+                    <p>Ace your interviews with expert preparation</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-freelancer"></i>
+                    <h3>Freelancing</h3>
+                    <p>Start your freelancing journey on Fiverr & Upwork</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-rocket"></i>
+                    <span>Career Success Hub</span>
+                </div>
+                <p>Empowering careers, one tip at a time.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Success Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #6366f1;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #fff;
+  color: #6366f1;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Section */
+.search-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.search-box {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #6366f1;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* Tips Section */
+.tips-section {
+  padding: 4rem 0;
+}
+
+.tips-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1f2937;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #6366f1;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tip-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.tip-category {
+  background: #e0e7ff;
+  color: #6366f1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tip-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.tip-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tip-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tip-tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+/* Categories Section */
+.categories-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.categories-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1f2937;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card i {
+  font-size: 3rem;
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.category-card p {
+  color: #6b7280;
+}
+
+/* Resources Section */
+.resources-section {
+  padding: 4rem 0;
+}
+
+.resources-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1f2937;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.resource-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.resource-card p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.resource-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.resource-link:hover {
+  background: white;
+  color: #6366f1;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #6366f1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tip-card {
+    padding: 1.5rem;
+  }
+
+  .category-card {
+    padding: 1.5rem;
+  }
+}
+
+</style>
+<script>
+// Tips data
+const tipsData = [
+  // Career Path Tips
+  {
+    id: 1,
+    category: "career",
+    title: "Assess Your Interests and Strengths",
+    description:
+      "Take personality tests like Myers-Briggs or Holland Code to understand what careers align with your natural inclinations.",
+    icon: "fas fa-compass",
+    tags: ["self-assessment", "personality", "career-planning"],
+  },
+  {
+    id: 2,
+    category: "career",
+    title: "Research Industry Growth Trends",
+    description:
+      "Look into which industries are growing and which are declining. Focus on future-proof careers in tech, healthcare, and green energy.",
+    icon: "fas fa-chart-line",
+    tags: ["industry-research", "future-trends", "growth"],
+  },
+  {
+    id: 3,
+    category: "career",
+    title: "Talk to Professionals in Your Field",
+    description:
+      "Conduct informational interviews with people working in careers you're considering. LinkedIn is great for this.",
+    icon: "fas fa-users",
+    tags: ["networking", "informational-interviews", "linkedin"],
+  },
+  {
+    id: 4,
+    category: "career",
+    title: "Consider Work-Life Balance",
+    description:
+      "Think about what kind of lifestyle you want. Some careers offer flexibility while others require long hours.",
+    icon: "fas fa-balance-scale",
+    tags: ["work-life-balance", "lifestyle", "priorities"],
+  },
+  {
+    id: 5,
+    category: "career",
+    title: "Explore Internship Opportunities",
+    description: "Internships give you real-world experience and help you understand if a career is right for you.",
+    icon: "fas fa-briefcase",
+    tags: ["internships", "experience", "career-exploration"],
+  },
+
+  // Skills Tips
+  {
+    id: 6,
+    category: "skills",
+    title: "Master Data Analysis",
+    description:
+      "Learn Excel, SQL, and Python for data analysis. Free resources: Khan Academy, Codecademy, and YouTube tutorials.",
+    icon: "fas fa-chart-bar",
+    tags: ["data-analysis", "excel", "sql", "python"],
+  },
+  {
+    id: 7,
+    category: "skills",
+    title: "Develop Digital Marketing Skills",
+    description:
+      "Learn SEO, social media marketing, and Google Ads. Free courses: Google Digital Garage, HubSpot Academy.",
+    icon: "fas fa-bullhorn",
+    tags: ["digital-marketing", "seo", "social-media", "google-ads"],
+  },
+  {
+    id: 8,
+    category: "skills",
+    title: "Learn Programming Languages",
+    description: "Start with Python or JavaScript. Free resources: freeCodeCamp, Codecademy, and The Odin Project.",
+    icon: "fas fa-code",
+    tags: ["programming", "python", "javascript", "coding"],
+  },
+  {
+    id: 9,
+    category: "skills",
+    title: "Improve Communication Skills",
+    description: "Practice public speaking, writing, and active listening. Join Toastmasters or take online courses.",
+    icon: "fas fa-comments",
+    tags: ["communication", "public-speaking", "writing"],
+  },
+  {
+    id: 10,
+    category: "skills",
+    title: "Master Project Management",
+    description: "Learn Agile, Scrum, and tools like Trello/Asana. Free resources: Coursera, edX, and YouTube.",
+    icon: "fas fa-tasks",
+    tags: ["project-management", "agile", "scrum", "tools"],
+  },
+
+  // Resume Tips
+  {
+    id: 11,
+    category: "resume",
+    title: "Use Action Verbs",
+    description:
+      'Start bullet points with strong action verbs like "achieved," "implemented," "optimized" instead of "responsible for."',
+    icon: "fas fa-bolt",
+    tags: ["action-verbs", "writing", "impact"],
+  },
+  {
+    id: 12,
+    category: "resume",
+    title: "Quantify Your Achievements",
+    description: 'Use numbers wherever possible: "Increased sales by 25%" instead of "Improved sales performance."',
+    icon: "fas fa-calculator",
+    tags: ["quantification", "metrics", "achievements"],
+  },
+  {
+    id: 13,
+    category: "resume",
+    title: "Tailor for Each Job",
+    description: "Customize your resume for each application by matching keywords from the job description.",
+    icon: "fas fa-target",
+    tags: ["customization", "keywords", "ats"],
+  },
+  {
+    id: 14,
+    category: "resume",
+    title: "Keep It Concise",
+    description:
+      "Limit to 1-2 pages. Use bullet points and white space effectively. Remove outdated or irrelevant information.",
+    icon: "fas fa-compress",
+    tags: ["concise", "formatting", "relevance"],
+  },
+  {
+    id: 15,
+    category: "resume",
+    title: "Include Relevant Keywords",
+    description:
+      "Use industry-specific keywords and skills mentioned in job postings to pass ATS (Applicant Tracking Systems).",
+    icon: "fas fa-key",
+    tags: ["keywords", "ats", "industry-terms"],
+  },
+
+  // LinkedIn Tips
+  {
+    id: 16,
+    category: "linkedin",
+    title: "Professional Profile Photo",
+    description:
+      "Use a high-quality, professional headshot with good lighting. Smile and dress appropriately for your industry.",
+    icon: "fas fa-camera",
+    tags: ["profile-photo", "professional", "first-impression"],
+  },
+  {
+    id: 17,
+    category: "linkedin",
+    title: "Compelling Headline",
+    description: "Write a headline that goes beyond your job title. Include your value proposition and key skills.",
+    icon: "fas fa-heading",
+    tags: ["headline", "value-proposition", "keywords"],
+  },
+  {
+    id: 18,
+    category: "linkedin",
+    title: "Optimize Your Summary",
+    description: "Write in first person, tell your story, include keywords, and end with a call-to-action.",
+    icon: "fas fa-align-left",
+    tags: ["summary", "storytelling", "call-to-action"],
+  },
+  {
+    id: 19,
+    category: "linkedin",
+    title: "Showcase Your Work",
+    description: "Add media, documents, and links to your experience sections. Show, don't just tell.",
+    icon: "fas fa-images",
+    tags: ["portfolio", "media", "showcase"],
+  },
+  {
+    id: 20,
+    category: "linkedin",
+    title: "Get Recommendations",
+    description: "Ask colleagues, managers, and clients for recommendations. Offer to write them in return.",
+    icon: "fas fa-thumbs-up",
+    tags: ["recommendations", "testimonials", "credibility"],
+  },
+
+  // Side Hustle Tips
+  {
+    id: 21,
+    category: "sidehustle",
+    title: "Online Tutoring",
+    description:
+      "Teach subjects you excel in on platforms like Chegg, Vedantu, or Unacademy. Great for students and professionals.",
+    icon: "fas fa-chalkboard-teacher",
+    tags: ["tutoring", "education", "online-teaching"],
+  },
+  {
+    id: 22,
+    category: "sidehustle",
+    title: "Content Creation",
+    description:
+      "Start a YouTube channel, blog, or Instagram account in your niche. Monetize through ads, sponsorships, and affiliate marketing.",
+    icon: "fas fa-video",
+    tags: ["content-creation", "youtube", "blogging", "social-media"],
+  },
+  {
+    id: 23,
+    category: "sidehustle",
+    title: "Freelance Writing",
+    description:
+      "Write articles, blog posts, or copy for businesses. Start with platforms like Contently, Scripted, or direct outreach.",
+    icon: "fas fa-pen",
+    tags: ["freelance-writing", "copywriting", "content-marketing"],
+  },
+  {
+    id: 24,
+    category: "sidehustle",
+    title: "Virtual Assistant Services",
+    description:
+      "Offer administrative support to busy entrepreneurs. Services include email management, scheduling, and research.",
+    icon: "fas fa-headset",
+    tags: ["virtual-assistant", "admin-support", "remote-work"],
+  },
+  {
+    id: 25,
+    category: "sidehustle",
+    title: "Sell Digital Products",
+    description: "Create and sell courses, ebooks, templates, or stock photos. Platforms: Gumroad, Teachable, Etsy.",
+    icon: "fas fa-download",
+    tags: ["digital-products", "passive-income", "online-courses"],
+  },
+
+  // Remote Job Tips
+  {
+    id: 26,
+    category: "remote",
+    title: "Use Remote Job Boards",
+    description: "Check RemoteOK, We Work Remotely, AngelList, FlexJobs, and Remote.co for remote opportunities.",
+    icon: "fas fa-globe",
+    tags: ["job-boards", "remote-work", "job-search"],
+  },
+  {
+    id: 27,
+    category: "remote",
+    title: "Highlight Remote Skills",
+    description:
+      "Emphasize self-motivation, communication, time management, and experience with remote tools in applications.",
+    icon: "fas fa-wifi",
+    tags: ["remote-skills", "self-motivation", "communication"],
+  },
+  {
+    id: 28,
+    category: "remote",
+    title: "Set Up a Professional Workspace",
+    description: "Create a dedicated, quiet workspace with good lighting and reliable internet for video calls.",
+    icon: "fas fa-desktop",
+    tags: ["home-office", "workspace", "productivity"],
+  },
+  {
+    id: 29,
+    category: "remote",
+    title: "Master Remote Tools",
+    description:
+      "Learn Slack, Zoom, Trello, Asana, Google Workspace, and other collaboration tools commonly used by remote teams.",
+    icon: "fas fa-tools",
+    tags: ["remote-tools", "collaboration", "productivity-tools"],
+  },
+  {
+    id: 30,
+    category: "remote",
+    title: "Network in Remote Communities",
+    description: "Join remote work communities on Reddit, Discord, and Facebook. Attend virtual networking events.",
+    icon: "fas fa-users",
+    tags: ["networking", "remote-communities", "virtual-events"],
+  },
+
+  // Interview Tips
+  {
+    id: 31,
+    category: "interview",
+    title: "Research the Company",
+    description:
+      "Study the company's website, recent news, culture, and values. Show genuine interest and ask informed questions.",
+    icon: "fas fa-search",
+    tags: ["company-research", "preparation", "due-diligence"],
+  },
+  {
+    id: 32,
+    category: "interview",
+    title: "Practice STAR Method",
+    description:
+      "Structure answers using Situation, Task, Action, Result for behavioral questions. Prepare 5-7 STAR stories.",
+    icon: "fas fa-star",
+    tags: ["star-method", "behavioral-questions", "storytelling"],
+  },
+  {
+    id: 33,
+    category: "interview",
+    title: "Prepare Smart Questions",
+    description:
+      "Ask about team dynamics, growth opportunities, challenges, and company culture. Avoid salary questions initially.",
+    icon: "fas fa-question-circle",
+    tags: ["questions", "engagement", "curiosity"],
+  },
+  {
+    id: 34,
+    category: "interview",
+    title: "Practice Mock Interviews",
+    description: "Do practice interviews with friends, family, or use platforms like Pramp or InterviewBuddy.",
+    icon: "fas fa-microphone",
+    tags: ["mock-interviews", "practice", "confidence"],
+  },
+  {
+    id: 35,
+    category: "interview",
+    title: "Follow Up Professionally",
+    description: "Send a thank-you email within 24 hours. Reiterate interest and mention key discussion points.",
+    icon: "fas fa-envelope",
+    tags: ["follow-up", "thank-you", "professionalism"],
+  },
+
+  // Freelancing Tips
+  {
+    id: 36,
+    category: "freelancing",
+    title: "Create a Strong Fiverr Profile",
+    description:
+      "Use professional photos, write compelling gig descriptions, and start with competitive pricing to build reviews.",
+    icon: "fab fa-fiverr",
+    tags: ["fiverr", "profile-optimization", "gig-creation"],
+  },
+  {
+    id: 37,
+    category: "freelancing",
+    title: "Build an Impressive Upwork Portfolio",
+    description: "Showcase your best work, get certifications, and write detailed project descriptions with results.",
+    icon: "fas fa-briefcase",
+    tags: ["upwork", "portfolio", "certifications"],
+  },
+  {
+    id: 38,
+    category: "freelancing",
+    title: "Start with Lower Rates",
+    description:
+      "Initially price competitively to build reviews and reputation. Gradually increase rates as you gain credibility.",
+    icon: "fas fa-dollar-sign",
+    tags: ["pricing-strategy", "reputation-building", "reviews"],
+  },
+  {
+    id: 39,
+    category: "freelancing",
+    title: "Deliver Quality Work On Time",
+    description: "Always meet deadlines and exceed expectations. Good reviews are crucial for long-term success.",
+    icon: "fas fa-clock",
+    tags: ["quality", "deadlines", "client-satisfaction"],
+  },
+  {
+    id: 40,
+    category: "freelancing",
+    title: "Communicate Effectively",
+    description:
+      "Respond quickly to messages, ask clarifying questions, and provide regular updates on project progress.",
+    icon: "fas fa-comments",
+    tags: ["communication", "client-relations", "updates"],
+  },
+
+  // Additional Career Tips
+  {
+    id: 41,
+    category: "career",
+    title: "Build a Personal Brand",
+    description:
+      "Consistently share valuable content in your field across social media platforms to establish thought leadership.",
+    icon: "fas fa-user-tie",
+    tags: ["personal-brand", "thought-leadership", "content-sharing"],
+  },
+  {
+    id: 42,
+    category: "skills",
+    title: "Learn Cloud Computing",
+    description: "Get certified in AWS, Azure, or Google Cloud. High demand skill with excellent career prospects.",
+    icon: "fas fa-cloud",
+    tags: ["cloud-computing", "aws", "azure", "certifications"],
+  },
+  {
+    id: 43,
+    category: "skills",
+    title: "Master Artificial Intelligence",
+    description:
+      "Learn machine learning, deep learning, and AI tools. Free resources: Coursera, edX, and Kaggle Learn.",
+    icon: "fas fa-robot",
+    tags: ["artificial-intelligence", "machine-learning", "ai-tools"],
+  },
+  {
+    id: 44,
+    category: "resume",
+    title: "Add a Skills Section",
+    description:
+      "Include both hard and soft skills relevant to your target role. Use a mix of technical and interpersonal skills.",
+    icon: "fas fa-cogs",
+    tags: ["skills-section", "hard-skills", "soft-skills"],
+  },
+  {
+    id: 45,
+    category: "linkedin",
+    title: "Post Regularly",
+    description: "Share industry insights, career tips, and professional achievements. Aim for 2-3 posts per week.",
+    icon: "fas fa-share",
+    tags: ["content-posting", "engagement", "visibility"],
+  },
+  {
+    id: 46,
+    category: "sidehustle",
+    title: "Dropshipping Business",
+    description: "Start an e-commerce store without inventory. Use Shopify + Oberlo or research trending products.",
+    icon: "fas fa-shipping-fast",
+    tags: ["dropshipping", "e-commerce", "online-business"],
+  },
+  {
+    id: 47,
+    category: "remote",
+    title: "Time Zone Awareness",
+    description: "When applying for remote jobs, consider time zone requirements and highlight your flexibility.",
+    icon: "fas fa-clock",
+    tags: ["time-zones", "flexibility", "global-remote"],
+  },
+  {
+    id: 48,
+    category: "interview",
+    title: "Dress Appropriately",
+    description: "Research company culture and dress slightly more formal than their everyday attire.",
+    icon: "fas fa-tshirt",
+    tags: ["dress-code", "professional-appearance", "company-culture"],
+  },
+  {
+    id: 49,
+    category: "freelancing",
+    title: "Diversify Your Services",
+    description:
+      "Offer complementary services to increase project value. For example, combine writing with SEO or design.",
+    icon: "fas fa-layer-group",
+    tags: ["service-diversification", "upselling", "value-addition"],
+  },
+  {
+    id: 50,
+    category: "career",
+    title: "Continuous Learning Mindset",
+    description: "Stay updated with industry trends, take online courses, and attend webinars to remain competitive.",
+    icon: "fas fa-graduation-cap",
+    tags: ["continuous-learning", "professional-development", "industry-trends"],
+  },
+  {
+    id: 51,
+    category: "skills",
+    title: "Develop Emotional Intelligence",
+    description: "Work on self-awareness, empathy, and social skills. These are increasingly valued in the workplace.",
+    icon: "fas fa-heart",
+    tags: ["emotional-intelligence", "soft-skills", "workplace-success"],
+  },
+  {
+    id: 52,
+    category: "career",
+    title: "Seek Mentorship",
+    description:
+      "Find experienced professionals who can guide your career. Many are willing to help if you approach respectfully.",
+    icon: "fas fa-hands-helping",
+    tags: ["mentorship", "career-guidance", "professional-relationships"],
+  },
+]
+
+// DOM elements
+const tipsGrid = document.getElementById("tipsGrid")
+const searchInput = document.getElementById("searchInput")
+const filterButtons = document.querySelectorAll(".filter-btn")
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
+
+// State
+let currentFilter = "all"
+let searchTerm = ""
+
+// Initialize the app
+document.addEventListener("DOMContentLoaded", () => {
+  renderTips(tipsData)
+  setupEventListeners()
+  setupSmoothScrolling()
+})
+
+// Render tips
+function renderTips(tips) {
+  tipsGrid.innerHTML = ""
+
+  if (tips.length === 0) {
+    tipsGrid.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-search" style="font-size: 3rem; color: #6b7280; margin-bottom: 1rem;"></i>
+                <h3>No tips found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
+            </div>
+        `
+    return
+  }
+
+  tips.forEach((tip) => {
+    const tipCard = createTipCard(tip)
+    tipsGrid.appendChild(tipCard)
+  })
+}
+
+// Create tip card
+function createTipCard(tip) {
+  const card = document.createElement("div")
+  card.className = "tip-card"
+  card.setAttribute("data-category", tip.category)
+
+  card.innerHTML = `
+        <div class="tip-header">
+            <div class="tip-icon">
+                <i class="${tip.icon}"></i>
+            </div>
+            <div class="tip-category">${getCategoryName(tip.category)}</div>
+        </div>
+        <h3 class="tip-title">${tip.title}</h3>
+        <p class="tip-description">${tip.description}</p>
+        <div class="tip-tags">
+            ${tip.tags.map((tag) => `<span class="tip-tag">${tag}</span>`).join("")}
+        </div>
+    `
+
+  return card
+}
+
+// Get category display name
+function getCategoryName(category) {
+  const categoryNames = {
+    career: "Career Path",
+    skills: "Skills",
+    resume: "Resume",
+    linkedin: "LinkedIn",
+    sidehustle: "Side Hustle",
+    remote: "Remote Jobs",
+    interview: "Interview",
+    freelancing: "Freelancing",
+  }
+  return categoryNames[category] || category
+}
+
+// Filter tips
+function filterTips() {
+  let filteredTips = tipsData
+
+  // Apply category filter
+  if (currentFilter !== "all") {
+    filteredTips = filteredTips.filter((tip) => tip.category === currentFilter)
+  }
+
+  // Apply search filter
+  if (searchTerm) {
+    filteredTips = filteredTips.filter(
+      (tip) =>
+        tip.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        tip.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        tip.tags.some((tag) => tag.toLowerCase().includes(searchTerm.toLowerCase())),
+    )
+  }
+
+  renderTips(filteredTips)
+}
+
+// Setup event listeners
+function setupEventListeners() {
+  // Search functionality
+  searchInput.addEventListener("input", (e) => {
+    searchTerm = e.target.value
+    filterTips()
+  })
+
+  // Filter buttons
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"))
+      // Add active class to clicked button
+      button.classList.add("active")
+      // Update current filter
+      currentFilter = button.getAttribute("data-category")
+      // Filter tips
+      filterTips()
+    })
+  })
+
+  // Mobile menu toggle
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active")
+    hamburger.classList.toggle("active")
+  })
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll(".nav-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active")
+      hamburger.classList.remove("active")
+    })
+  })
+}
+
+// Setup smooth scrolling
+function setupSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault()
+      const target = document.querySelector(this.getAttribute("href"))
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        })
+      }
+    })
+  })
+}
+
+// Add scroll effect to header
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header")
+  if (window.scrollY > 100) {
+    header.style.background = "rgba(255, 255, 255, 0.95)"
+    header.style.backdropFilter = "blur(10px)"
+  } else {
+    header.style.background = "#fff"
+    header.style.backdropFilter = "none"
+  }
+})
+
+// Add animation on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1"
+      entry.target.style.transform = "translateY(0)"
+    }
+  })
+}, observerOptions)
+
+// Observe tip cards for animation
+setTimeout(() => {
+  document.querySelectorAll(".tip-card").forEach((card) => {
+    card.style.opacity = "0"
+    card.style.transform = "translateY(20px)"
+    card.style.transition = "opacity 0.6s ease, transform 0.6s ease"
+    observer.observe(card)
+  })
+}, 100)
+
+</script>
